@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Endangered Birds</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+           <li><a href="Login_page.html">LOG IN</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Endangered Birds on Sea</h1>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>1. Balearic Shearwater</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 3,000 - 5,000</b><br>The Balearic Shearwater is a medium-sized seabird that breeds in the western Mediterranean and ranges across the Atlantic Ocean. With only 3,000-5,000 individuals remaining, the species is considered critically endangered due to threats from introduced mammalian predators, bycatch in fisheries, and habitat loss. Conservation efforts include research, monitoring, and habitat protection, as well as public education and awareness-raising campaigns to reduce threats to the species. The Balearic Shearwater is an important indicator species of the health of marine ecosystems, and continued conservation efforts are necessary to prevent its extinction.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/Balearic Shearwater.jpeg">
+      </div>
+    </div>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>2. New Zealand Storm Petrel</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 100 - 200</b><br>The New Zealand Storm Petrel is a small seabird endemic to New Zealand and is one of the rarest seabirds in the world. The species is critically endangered due to habitat destruction, predation, and disturbance. The current population is estimated to be between 100 to 200 individuals. Conservation efforts include habitat restoration, predator control, and monitoring of breeding sites. The species' survival depends on continued conservation efforts, and public awareness of the importance of protecting this unique and remarkable species.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/petrel.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>3. Amsterdam Albatross</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 130 - 170</b><br>The Amsterdam Albatross is a large seabird that is endemic to the Amsterdam Island in the southern Indian Ocean. With only around 170 individuals remaining, the species is critically endangered due to introduced mammalian predators and longline fishing. Conservation efforts include predator control, habitat protection, and monitoring.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/albatross.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>

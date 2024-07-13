@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Endangered Birds</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+           <li><a href="Login_page.html">LOG IN</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Endangered Birds on Land</h1>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>1. Kakapo</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 200 - 213</b><br>The kakapo, a large, flightless parrot endemic to New Zealand, is critically endangered with only 200-213 individuals remaining due to habitat loss and predation by introduced mammalian predators. Efforts to conserve the species include a successful captive breeding program, predator control, habitat restoration, and genetic management of the breeding program. With a lifespan of up to 90 years, the kakapo is one of the world's longest-living bird species. Continued conservation efforts are crucial to prevent the kakapo from going extinct, and every individual counts in ensuring the future of this unique and remarkable species.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/kakapo.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>2. Kiwi</h1>
+        <p><b>Status: Endangered<br>Estimated Population: 50,000 - 70,000</b><br>The kiwi is a flightless bird endemic to New Zealand and is classified as endangered due to habitat destruction, predation by invasive species, and hunting. With an estimated population of 50,000 to 70,000 individuals, the kiwi faces ongoing threats to its survival. Conservation efforts include habitat restoration, predator control, captive breeding, and public education programs to raise awareness of the importance of protecting this iconic species. Continued conservation efforts are crucial to ensure the kiwi's survival and prevent it from becoming extinct.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/kiwi.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="birds">
+    <div class="row">
+      <div class="bird_col">
+        <h1>3. Siberian Crane</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 3,000 - 4,000</b><br>The Siberian Crane is a migratory bird that breeds in Siberia and winters in China and India. The species is critically endangered due to habitat loss, poaching, and pollution. The current population is estimated to be between 3,000 to 4,000 individuals. Conservation efforts include habitat restoration, captive breeding, and international cooperation to protect the species along its migratory route. Despite these efforts, the species continues to face significant threats, and continued conservation efforts are essential to prevent its extinction.</p>
+      </div>
+      <div class="bird_col">
+        <img src="images/crane.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>

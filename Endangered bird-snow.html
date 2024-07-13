@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Endangered Birds</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+           <li><a href="Login_page.html">LOG IN</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Endangered Birds in Cold Regions </h1>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>1. Sooty Albatross</h1>
+        <p><b>Status: Near Threatened<br>Estimated Population: 42,000</b><br>The Sooty Albatross is a large seabird that breeds on islands in the southern oceans and ranges across the southern hemisphere. The species is considered near threatened, with a stable population trend, but is threatened by introduced mammalian predators, bycatch in fisheries, and climate change. Conservation efforts include research, monitoring, and habitat protection.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/sooty.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>2. Northern Royal Albatross</h1>
+        <p><b>Status: Endangered<br>Estimated Population: 15,000</b><br>The Northern Royal Albatross is a large seabird that breeds on islands in the southern oceans and ranges across the southern hemisphere. With only an estimated 15,000 individuals remaining, the species is considered endangered due to introduced mammalian predators, bycatch in fisheries, and habitat loss. Conservation efforts include predator control, habitat protection, and monitoring.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/royal.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>3. Grey-headed Albatross</h1>
+        <p><b>Status: Endangered<br>Estimated Population: 2,000 - 3,000</b><br>The Grey-headed Albatross is a large seabird that breeds on sub-Antarctic islands and ranges across the southern oceans. With only 2,000-3,000 individuals remaining, the species is considered endangered due to introduced mammalian predators, bycatch in fisheries, and climate change. Conservation efforts include predator control, habitat protection, and monitoring, as well as research into the species' ecology and behavior.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/grey.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>

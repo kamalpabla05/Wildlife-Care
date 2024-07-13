@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Animals</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Endangered Animals in Cold Regions</h1>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>1. Snow Leopard</h1>
+        <p><b>Status: Vulnerable<br>Estimated Population: 4,000-6,500</b><br>Humans. Hunting, habitat loss, declines in natural prey species, and retaliatory killings resulting from human-wildlife conflict are the main reasons this big cat is under threat.The other major impact on snow leopard survival is the climate crisis. Rising global temperatures can severely impact alpine habitat productivity which in turn can impact prey and freshwater availability in the harsh mountainous environment.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/leopard.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>2. Polar Bears</h1>
+        <p><b>Status: Vulnerable<br>Estimated Population: 22,000-31,000</b><br>The loss of sea ice habitat from climate change is the biggest threat to the survival of polar bears. Other concerns for polar bears include lethal response to human-polar bear conflict, toxic pollution in the environment, and direct impacts from industrial development, such as disturbance of maternal dens or contact with an oil spill, and potential overhunting of some subpopulations.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/polar.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>3. Caribou</h1>
+        <p><b>Status: Vulnerable<br>Estimated Population: 2,59,000</b><br>Besides drilling and development in the caribou’s habitat, climate change is causing ice storms that glaze over tundra vegetation; more frequent fires that kill lichens; early peaking of best spring forage before the herd arrives in the refuge to breed; and increases in mosquitoes significant enough to interfere with feeding.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/caribou.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>

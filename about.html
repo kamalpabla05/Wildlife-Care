@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">KNOW YOUR PLACE</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about_col">
+        <h1>We are trying to bring peace and harmony in nature by providing awarness about it</h1>
+        <p>Do you know that Earth is going through its sixth animal and plant extinction (with the last one causing extinction of dinosaurs)? Although extinctions are naturally occuring , the current mass extinction is unique because it is almost entirely caused due to human activities.</p>
+        <p>According to the 2017 IUCN Red List of Threatened Species, the global authority on species' conservation status, one out of four of the world’s mammals and over 40 percent of amphibians are threatened with extinction due to human activity.</p>
+        <p>Overconsumption and unsustainable human population growth are bringing about massive changes in the environment and endangering wildlife by disrupting ecosystems in numerous ways.</p>
+        <p>Large tracts of native rain forests in Indonesia are cleared to make way for palm oil plantations for processed foods and cosmetics—displacing orangutans, Sumatran tigers and other forest dwelling animals. Eucalyptus-rich forest areas of Australia are being rapidly destroyed, eliminating habitat critical to the survival of the threatened koala. Converting forests into agricultural land threatens spectacled bears in South America. Animals who survive the habitat destruction, such as radiated tortoises in Madagascar, are collected and smuggled by dealers to supply the exotic pet trade. Wolves, after a successful recovery in Western US states, are now persecuted by ranchers seeking unfettered livestock range. And the list of negatives can go on.</p>
+        <p>So, it's high time for the entire humanity to understand the damage caused to the environment due to the numerous activities and try minimizing the effects of these activities if not being able to eliminate them.</p>
+      </div>
+      <div class="about_col">
+        <img src="images/forest2.jpg">
+        <img src="images/forest3.jpg">
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <button class="carousel-control prev"> &lt; </button>
+      <div class="carousel-slide active">
+        <div class="slide-content">
+          <h2>Greta Thunberg</h2>
+          <h5> Environmental activist</h5> 
+          <p>" We aren’t  destroying the biosphere because we are selfish. We are doing it simply because we are unaware. "</p>
+        </div>
+        <img src="images/greta.webp" alt="Image 1"  class="c-img">
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-content">
+          <h2>Leonardo Dicaprio</h2>
+          <h5> American Actor, Film Producer, Environmental Activist</h5>  
+          <p>" Climate change is real. It is happening right now, it is the most urgent threat facing our entire species and we need to work collectively together and stop procrastinating. "</p>
+        </div>
+        <img src="images/dicaprio.webp" alt="Image 2" class="c-img">
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-content">
+          <h2>Jadav Payeng</h2>
+          <h5>Forest Man of India</h5>
+          <p>" Only by growing plants the earth will survive. "</p>
+        </div>
+        <img src="images/Jadav-Payeng.jpg" alt="Image 3"  class="c-img">
+      </div>
+      <button class="carousel-control next"> &gt; </button>
+    </div>
+  </section>
+  
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+      const slides = document.querySelectorAll('.carousel-slide');
+      let currentSlide = 0;
+      let autoSlideInterval; // Variable to store the interval for automatic slide change
+
+      function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        slides[index].classList.add('active');
+        currentSlide = index;
+      }
+
+      document.querySelector('.carousel-control.prev').addEventListener('click', () => {
+        const prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevSlide);
+        clearInterval(autoSlideInterval); // Reset the automatic slide change timer
+      });
+
+      document.querySelector('.carousel-control.next').addEventListener('click', () => {
+        const nextSlide = (currentSlide + 1) % slides.length;
+        showSlide(nextSlide);
+        clearInterval(autoSlideInterval); // Reset the automatic slide change timer
+      });
+
+      function autoChangeSlide() {
+        const nextSlide = (currentSlide + 1) % slides.length;
+        showSlide(nextSlide);
+      }
+
+      // Start automatic slide change timer
+      autoSlideInterval = setInterval(autoChangeSlide, 5000);
+  </script>
+
+</body>
+</html>

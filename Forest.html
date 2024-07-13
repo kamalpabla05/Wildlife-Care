@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Endangered Animals</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+           <li><a href="Login_page.html">LOG IN</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Forest</h1>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>1. Deforestation</h1>
+        <p>Deforestation is the permanent removal of trees to make room for something besides forest. Forests cover more than 30% of the Earth's land surface, according to the World Wildlife Fund(WWF). These forested areas are home to an estimated 80% of Earth's terrestrial species.  Worldwide, forests provide 13.4 million people with jobs in the forest sector, and another 41 million people have jobs related to forests.<br>Today, most deforestation is happening in the tropics. The world has lost about 10% of its tropical tree cover since 2000, and nearly 47,000 square miles (121,000 square kilometers) were destroyed in 2019 alone, The New York Times reported in 2020.<br>The World Bank estimates that about 3.9 million square miles (10 million square km) of forest have been lost since the beginning of the 20th century. In the past 25 years, forests shrank by 502,000 square miles (1.3 million square km). </p>
+      </div>
+      <div class="animal_col">
+        <img src="images/deforestation.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>2. Forest Fire</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/fire.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>3. Global Warming</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/warming.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>

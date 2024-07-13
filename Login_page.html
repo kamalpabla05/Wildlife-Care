@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBfNt0RyCDVbT6TbWyS33ZwBVxFHUnZDco",
+      authDomain: "wildlife-care-5ecfb.firebaseapp.com",
+      projectId: "wildlife-care-5ecfb",
+      storageBucket: "wildlife-care-5ecfb.appspot.com",
+      messagingSenderId: "324381164839",
+      appId: "1:324381164839:web:6050605f948baa289d9502",
+      measurementId: "G-VR7G3GPYE8"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+<!---Header---->
+    <div id="login">
+        <img src="avatar.png" class="layout">
+        <h1>Login</h1>
+        <h2>Welcome to WildLife Care family</h2>
+        <h2>Happy to see YOU here</h2>
+        <form>
+          <p>Username<p>
+           <input type="text" name="" placeholder="Enter Username">
+          <p>Password</p>
+           <input type="password" name="" placeholder="Enter Password">
+           <input type="submit" name="" value="Login"><br>
+           <a href="#">Forgot your password?</a><br>
+           <a href="register.html">Don't have an account. Create one here.</a>
+        </form>
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Animals</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2595c71268.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Logo.png"></a>
+      <div class="nav-link" id="navLink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="climate.html">CLIMATE IN YOUR AREA</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+      </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Endangered Animals on Sea</h1>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>1. Blue Whale</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 10,000–25,000</b><br>The global blue whale population is estimated to be 10,000–25,000, roughly 3–11% of the population size estimated in 1911. Despite protections, about 1,500 blue whales are still killed each year. Before measures were put in place, more than 350,000 blue whales were killed from 1904 to 1967. The major threats to whales are the whaling industry which thrives off of the oil produced from whale blubber and in the past, the bones of the whales and climate change. </p>
+      </div>
+      <div class="animal_col">
+        <img src="images/blue whale.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>2. Sea Otter</h1>
+        <p><b>Status: Endangered<br>Estimated Population: 150,000-300,000</b><br>The sea otter was nearly extinct due to large-scale commercial hunting. The sea otter was once abundant in a wide arc across the North Pacific ocean, from northern Japan to Alaska to Mexico. By 1911, hunting for the animal's luxurious fur had reduced the sea otter population to fewer than 2000 individuals in the most remote and inaccessible parts of its range.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/otter.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="animals">
+    <div class="row">
+      <div class="animal_col">
+        <h1>4. Hawksbill Turtle</h1>
+        <p><b>Status: Critically Endangered<br>Estimated Population: 15,000-23,000</b><br>The iconic Hawksbill Turtle has seen 84% of its population decline within three generations. Estimates place the current population at 15,000 to 23,000 nesting females. Major populations of Hawksbill Turtle are found in North-Eastern Australia, the Yucatán Peninsula in Mexico, and on Cuba’s coastlines.</p>
+      </div>
+      <div class="animal_col">
+        <img src="images/hawksbill.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h3>About Us</h3>
+    <p>Wildlife Care is made with the vision to spread awarness about endangered wildlife species as well as problems caused due to climate change.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-github"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Sanchita Bora</p>
+  </section>
+
+  <script>
+      var navLink = document.getElementById('navLink');
+      function showMenu(){
+        navLink.style.right="0";
+      }
+      function hideMenu(){
+        navLink.style.right="-200px";
+      }
+  </script>
+
+</body>
+</html>
